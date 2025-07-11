@@ -1,0 +1,1052 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+   overflow-x:;
+}
+
+.background {
+    background-image: url("https://miro.medium.com/v2/resize:fit:4800/format:webp/1*5lyavS59mazOFnb55Z6znQ.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+      position: relative;
+  min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.taskbar_shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+    width: 100%;
+    min-height: 7rem;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+
+.taskbar {
+    position: relative;
+    width: 100%; max-width: 100%; max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+}
+
+.taskbar>img {
+    max-width: 8.125rem;
+    min-height: auto;
+
+}
+
+.taskbar>a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 0.3125rem 0.625rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.taskbar a:hover {
+    background-color: rgb(167, 4, 4);
+}
+
+.bodytext {
+    max-width: 40.625rem;
+    min-height: 30vh;
+    margin: 0 auto;
+    transform: translateY(50%);
+    text-align: center;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.bodytext>h1 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: lighter;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.bodytext h3 {
+    font-size: 1.25rem;
+}
+
+.bodytext p {
+    font-size: 1rem;
+}
+
+.emailbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.emailbar input {
+    box-sizing: border-box;
+    font-size: 1.875rem;
+    padding: 0.3125rem;
+    color: white;
+    background-color: transparent;
+    border: 0.0625rem solid white;
+}
+
+.emailbar>input::placeholder {
+    font-size: 0.875rem;
+    color: white;
+
+}
+
+.emailbar a {
+    font-size: 1.375rem;
+    font-weight: 500;
+    position: relative;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 0.5625rem 3.0625rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.emailbar a:hover {
+    background-color: rgb(167, 4, 4);
+}
+
+.emailbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    max-width: 18.75rem;
+}
+
+.emailbutton i {
+    position: relative;
+    font-size: 1rem;
+    right: 1.875rem;
+    font-weight: 900;
+}
+
+.container {
+    position: relative;
+    margin-top: -0.625rem;
+    width: 100%;
+    margin-top: 0;
+    min-height: 50vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    margin-top: 0.4375rem;
+    left: 0;
+    width: 100%;
+    min-height: 0.4375rem;
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 10%,
+            rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 1),
+            #b82869,
+            rgba(33, 13, 22, 1) 90%);
+}
+
+.trending {
+    width: 100%; max-width: 75rem;
+    margin: 0 auto;
+}
+
+.trending h3 {
+    position: relative;
+    font-size: 1.875rem;
+    color: white;
+    margin-top: 1.875rem;
+}
+
+.allcovers {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: left;
+    align-items: center;
+    width: 100%; max-width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 1.875rem;
+    margin-top: 1.25rem;
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+
+.cover1 {
+    width: 14.375rem;
+    min-height: 20rem;
+    flex-shrink: 0;
+    transition: all .20s ease-in;
+}
+
+.cover1 img {
+    position: relative;
+    width: 14.375rem;
+    min-height: 20rem;
+    border-radius: 0.625rem;
+    object-fit: cover;
+}
+
+.cover1:hover {
+    transform: scale(1.035);
+}
+
+.movienumber {
+    font-family: fantasy;
+    width: 18.75rem;
+    color: black;
+    position: absolute;
+    top: 5.625rem;
+}
+
+.movienumber>h1 {
+    position: fixed;
+    font-size: 6.5625rem;
+    font-family: fantasy;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+
+.Reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.heading {
+    position: relative;
+    margin-top: 1.25rem;
+
+}
+
+.Reasons h3 {
+    width: 100%; max-width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    font-size: 1.875rem;
+    color: white;
+    margin-top: 1.25rem;
+    margin-bottom: 1%;
+}
+
+.reasonboxes {
+    margin-left: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: left;
+    align-items: center;
+    width: 100%; max-width: 75rem;
+    min-height: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box1 {
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 96.86%);
+    box-sizing: border-box;
+   max-width: 17.8125rem;
+    padding: 1rem;
+    min-height: 23.75rem;
+    flex-shrink: 0;
+    background-color: rgb(46, 37, 94);
+    border-radius: 0.625rem;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+
+.box1>h4 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.box1>p {
+    font-weight: lighter;
+    position: relative;
+    margin-top: -0.625rem;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-style: normal;
+}
+
+.reason-image {
+    position: relative;
+    max-width: 5rem;
+    min-height: 5rem;
+    margin-bottom: 0.9375rem;
+    margin-left: 11.875rem;
+}
+
+.reason-image img {
+    max-width: 5rem;
+    min-height: 5rem;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.box3 img {
+    position: relative;
+    margin-top: 1.875rem;
+}
+
+.questionbox-heading {
+    width: 100%; max-width: 75rem;
+    margin: 0 auto;
+    min-height: 3.125rem;
+    position: relative;
+    margin-bottom: 5rem;
+
+}
+
+.questionbox-heading>h3 {
+    position: relative;
+    font-size: 1.875rem;
+    color: white;
+}
+
+.questionbox {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%; max-width: 75rem;
+    min-height: 65vh;
+    margin: 0 auto;
+    margin-top: -5rem;
+    padding: 1rem;
+}
+
+.question1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   width: 100%;
+max-width: 73.75rem;
+    margin: 0 auto;
+    min-height: 3.75rem;
+    flex-shrink: 0;
+    background-color: rgb(45, 45, 45);
+    transition: all .10s ease-in-out;
+}
+
+.question1 h3,
+i {
+    color: white;
+    font-size: 1.5625rem;
+
+}
+
+.question1:hover {
+    background-color: rgb(70, 70, 70);
+}
+.answer{
+     background-color: rgb(34, 34, 34);
+    padding: 1rem;
+   width: 100%;
+max-width: 73.75rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    flex-shrink: 0;
+    color: white;
+    font-size: 1.5625rem;
+    z-index: 2;
+}
+
+
+
+.readytowatch {
+    width: 100%; max-width: 75rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.emailbar2 input {
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    padding: 0.4375rem;
+    background-color: transparent;
+    border: 0.0625rem solid white;
+}
+
+
+.emailbar2 a {
+    font-size: 1.375rem;
+    font-weight: 500;
+    position: relative;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 1.125rem 3.75rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactus {
+    width: 100%; max-width: 75rem;
+    min-height: 60vh;
+    margin: 0 auto;
+}
+
+.contactusquestion {
+    width: 100%;
+    min-height: 1.875rem;
+}
+
+.contactusquestion>a {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+
+.questions>a{
+     color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-row-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  gap: 1rem 2rem;
+}
+
+.footer-row-grid div {
+  margin-bottom: 0.5rem;
+}
+
+.footer-row-grid a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-row-grid a:hover {
+  color: white;
+}
+
+.footer-row-grid select {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+}
+
+.secondlastline {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  grid-column: span 4;
+  padding-left: 0.2rem;
+}
+
+.lastline>h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+.lastline a {
+  color: rgb(68, 142, 244);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+   
+   .container{
+    position: relative;
+    top: -10px;
+  }
+  .taskbar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16rem;
+    padding: 0 1rem;
+  }
+
+  .taskbar img {
+    max-width: 7rem;
+  }
+
+  .taskbar>a {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .background{
+    min-height: 70vh;
+  }
+  .background::before{
+    min-height: 70vh;
+    max-width: 100%;
+  }
+  .bodytext h1 {
+    font-size: 2rem;
+  }
+
+  .bodytext h3,
+  .bodytext p {
+    font-size: 0.875rem;
+  }
+
+  .emailbar input,
+  .emailbar2 input {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+  }
+
+  .emailbar a,
+  .emailbar2 a {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .allcovers {
+    margin-left: 0;
+    padding: 1rem 1rem;
+    gap: 0.5rem;
+    width: 27rem;
+  }
+
+
+  .cover1,
+  .cover1 img {
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .reasonboxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box1 {
+    width: 80%;
+    min-height: 5rem;
+    max-width: 100%;
+  }
+
+  .questionbox {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    max-width: 28rem;
+    padding: 1rem;
+    margin: 0 auto; /* This centers the whole question box */
+    align-items: center; /* This centers the child boxes horizontally */
+}
+
+.question1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    width: 100%;          /* Let it take full width of .questionbox */
+    width: 15rem;     /* Set max width for centering */
+    background-color: #222;
+    color: white;
+    border-radius: .5rem;
+}
+
+.answer {
+    flex-shrink: 0;
+    padding: 0.5rem;
+    width: 100%;
+    width: 15rem;
+    min-height: 3rem;
+    z-index: 2;
+    font-size: 1.125rem;
+    border-radius: .5rem;
+    background-color: #333;
+    color: white;
+}
+
+.footer-row-grid {
+  margin-top: 1rem;
+  display: flex;
+ flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+
+}
+.footer-row-grid select{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+}
+
+  
+
+/* for mobile phones in portrait */
+@media (max-width: 576px) {
+  body{
+    overflow-x: hidden;
+  }
+  .container{
+    position: relative;
+    top: -10px;
+  }
+  .taskbar {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  .taskbar img {
+    max-width: 6rem;
+  }
+
+  .taskbar > a {
+    font-size: 0.875rem;
+    padding: 0.4rem 0.75rem;
+  }
+  .emailbutton i{
+    display: none;
+   
+  }
+  .emailbutton>a{
+    width:75px;
+  }
+
+  .background,
+  .background::before {
+    min-height: 65vh;
+    max-width: 100%;
+  }
+  .bodytext h1 {
+    font-size: 1.75rem;
+  }
+
+  .bodytext h3,
+  .bodytext p {
+    font-size: 0.75rem;
+  }
+
+  .emailbar input,
+  .emailbar2 input {
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
+
+  .emailbar a,
+  .emailbar2 a {
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .allcovers {
+    width: 90%;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 0;
+  }
+
+  .cover1,
+  .cover1 img {
+    width: 8rem;
+    height: 9rem;
+    flex-shrink: 0;
+  }
+  .movienumber h1{
+    display: none;
+ 
+  }
+
+  .reasonboxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1 {
+    width: 90%;
+    min-height: auto;
+  }
+
+  .questionbox {
+    padding: 0.5rem;
+  }
+
+  .question1 {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 0.5rem;
+  }
+
+  .question1 h3,
+  .question1 i {
+    font-size: 1rem;
+  }
+  .headings{
+    margin-left: 1rem;
+  }
+  .heading>h3{
+    margin-left:1rem;
+  }
+  .question1{
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-row-grid {
+  margin-top: 1rem;
+  display: flex;
+ flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+
+}
+.footer-row-grid select{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+}
+
+@media (min-width: 756px) and (max-width: 1100px) {
+ body{
+    overflow-x: hidden;
+  }
+   .container{
+    position: relative;
+    top: -10px;
+  }
+  .taskbar {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 2rem;
+  }
+
+  .taskbar img {
+    max-width: 8.125rem;
+  }
+
+  .taskbar > a {
+    font-size: 1rem;
+    padding: 0.3125rem 0.625rem;
+  }
+
+  .background,
+  .background::before {
+    min-height: 100vh;
+    max-width: 100%;
+  }
+  .bodytext h1 {
+    font-size: 4rem;
+  }
+
+  .bodytext h3,
+  .bodytext p {
+    font-size: 1.25rem;
+  }
+
+  .emailbar input,
+  .emailbar2 input {
+    font-size: 1.875rem;
+    padding: 0.3125rem;
+  }
+
+  .emailbar a,
+  .emailbar2 a {
+    font-size: 1.375rem;
+    padding: 0.5625rem 3.0625rem;
+  }
+
+  .allcovers {
+    margin-left: 1.875rem;
+    padding: 0;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .cover1,
+  .cover1 img {
+    width: 14.375rem;
+    height: 20rem;
+  }
+
+  .reasonboxes {
+    justify-content: center;
+  }
+
+  .box1 {
+    width: auto;
+    min-height: 23.75rem;
+    max-width: 17.8125rem;
+    
+  }
+
+  .question1 {
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem;
+    max-width: 58.75rem;
+    min-height: 3rem;
+  }
+
+  .question1 h3,
+  .question1 i {
+    font-size: 1.5625rem;
+  }
+  
+
+}
+
+@media (max-height: 500px) {
+  .container {
+    margin-top: 10rem;
+  }
+  .container::before{
+    display: none;
+  }
+  }
+  @media (width: 1024px) {
+  .background{
+    height: 100vh;
+  }
+}
+
+
+  
+
+
+/* iPad Mini (768x1024) */
+@media (min-width: 760px) and (max-width: 820px) and (orientation: portrait) {
+  body{
+    overflow-x: hidden;
+  }
+  .taskbar {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+    padding: 0 1rem;
+  }
+
+  .background,
+  .background::before {
+    min-height: 85vh;
+  }
+
+  .bodytext h1 {
+    font-size: 2.5rem;
+  }
+  .questionbox {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    max-width: 35rem;
+    padding: 1rem;
+    margin: 0 auto; /* This centers the whole question box */
+    align-items: center; /* This centers the child boxes horizontally */
+}
+
+.question1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    width: 100%;       
+    width: 30rem;     
+    background-color: #222;
+    color: white;
+    border-radius: .5rem;
+}
+
+.answer {
+    flex-shrink: 0;
+    padding: 0.5rem;
+    width: 100%;
+    width: 30rem;
+    min-height: 3rem;
+    z-index: 2;
+    font-size: 1.125rem;
+    border-radius: .5rem;
+    background-color: #333;
+    color: white;
+}
+
+  .emailbar a {
+    padding: 0.5rem 2.5rem;
+  }
+}
+
+/* iPad Air (820x1180) */
+@media (min-width: 810px) and (max-width: 850px) and (orientation: portrait) {
+  body{
+    overflow-x: hidden;
+  }
+  
+  .taskbar {
+    justify-content: space-between;
+    gap: 12rem;
+  }
+
+  .background,
+  .background::before {
+    min-height: 90vh;
+  }
+  .background::before{
+    height: 101%;
+  }
+  .reasonboxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box1 {
+    width: 40%;
+    min-height: 10rem;
+    max-width: 100%;
+  }
+
+  .bodytext h1 {
+    font-size: 3rem;
+  }
+
+  .cover1,
+  .cover1 img {
+    width: 12rem;
+    height: 16rem;
+  }
+}
+
+/* iPad Pro 11" (834x1194) & 12.9" (1024x1366) */
+@media (min-width: 830px) and (max-width: 1100px) {
+  body{
+    overflow-x: hidden;
+  }
+  .taskbar {
+    gap: 14rem;
+  }
+
+  .bodytext h1 {
+    font-size: 3.25rem;
+  }
+
+  .background,
+  .background::before {
+    min-height: 80vh;
+  }
+  .movienumber{
+    display: none;
+  }
+
+  .emailbar input {
+    font-size: 1.75rem;
+  }
+}
+
+/* Surface Pro 7 (912x1368) */
+@media (min-width: 900px) and (max-width: 950px) {
+  body{
+    overflow-x: hidden;
+  }
+  .taskbar {
+    justify-content: space-between;
+    padding: 0 2rem;
+    gap: 12rem;
+  }
+
+  .background,
+  .background::before {
+    min-height: 100vh;
+  }
+
+  .cover1,
+  .cover1 img {
+    width: 13rem;
+    height: 18rem;
+  }
+}
+
+/* Surface Duo (540x720) */
+@media (max-width: 550px) and (orientation: portrait) {
+  body{
+    overflow-x: hidden;
+  }
+  .taskbar {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .bodytext h1 {
+    font-size: 1.5rem;
+  }
+
+  .cover1,
+  .cover1 img {
+    width: 7rem;
+    height: 8rem;
+  }
+
+  .emailbar a {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .background,
+  .background::before {
+    min-height: 65vh;
+  }
+}
